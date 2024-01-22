@@ -10,7 +10,6 @@ async function getData(){
 
 const photos = async () => {
     const data = await getData();
-    console.log(data);
     const listPhotos = data.slice(0,12).map(photo =>{
         return(
             <div className={styles.item} key={photo.id}>
